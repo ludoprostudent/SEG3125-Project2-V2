@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/SEG3125-project2-V2/static/css/main.53289221.css",
+    "main.js": "/SEG3125-project2-V2/static/js/main.f8f82748.js",
+    "static/media/RopestPersonalUseOnly-wrpx.ttf": "/SEG3125-project2-V2/static/media/RopestPersonalUseOnly-wrpx.cf29be9a08dad8ce6be0.ttf",
+    "static/media/header_home.jpg": "/SEG3125-project2-V2/static/media/header_home.4a4f1cfb74e4afa709dd.jpg",
+    "static/media/bootstrap-icons.woff?": "/SEG3125-project2-V2/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/jetski_image.jpg": "/SEG3125-project2-V2/static/media/jetski_image.aa4969dc66f58c2cb95c.jpg",
+    "static/media/bootstrap-icons.woff2?": "/SEG3125-project2-V2/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "static/media/howToRentImage.jpg": "/SEG3125-project2-V2/static/media/howToRentImage.1868df9d05c9c25f3faa.jpg",
+    "static/media/waterski_image.jpg": "/SEG3125-project2-V2/static/media/waterski_image.e0cb9207d2633d55c98e.jpg",
+    "static/media/wakeboard_image.jpg": "/SEG3125-project2-V2/static/media/wakeboard_image.9ed716cb0bd2275ce952.jpg",
+    "static/media/newsImage.jpg": "/SEG3125-project2-V2/static/media/newsImage.22dc5272d906bfcd50e8.jpg",
+    "static/media/tube_image.jpg": "/SEG3125-project2-V2/static/media/tube_image.c1b5484c1b535c281b9b.jpg",
+    "index.html": "/SEG3125-project2-V2/index.html",
+    "main.53289221.css.map": "/SEG3125-project2-V2/static/css/main.53289221.css.map",
+    "main.f8f82748.js.map": "/SEG3125-project2-V2/static/js/main.f8f82748.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.53289221.css",
+    "static/js/main.f8f82748.js"
+  ]
+}
