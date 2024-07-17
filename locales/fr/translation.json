@@ -101,5 +101,18 @@
     "wakeboard-content1": "Équipement de protection : Portez un équipement de protection approprié, y compris un casque et un gilet d'impact.",
     "wakeboard-content2": "Équilibre et contrôle : Pratiquez le maintien de l'équilibre et du contrôle sur le wakeboard avant d'essayer des figures.",
     "wakeboard-content3": "Communication : Établissez des signaux clairs avec le conducteur du bateau pour les ajustements de vitesse et les changements de cap.",
-    "wakeboard-content4": "Vigilance : Restez attentif aux vagues des bateaux, aux autres embarcations et à tout obstacle dans l'eau."
+    "wakeboard-content4": "Vigilance : Restez attentif aux vagues des bateaux, aux autres embarcations et à tout obstacle dans l'eau.",
+    "aria-label-language-selector": "Sélecteur de langue",
+    "aria-label-english": "Sélectionner l'anglais",
+    "aria-label-french": "Sélectionner le français",
+    "aria-nav-homepage": "Page d'accueil",
+    "aria-nav-howtorent": "Comment louer",
+    "aria-nav-rentalequip": "Équipement de location",
+    "aria-nav-compare": "Comparer les bateaux",
+    "aria-nav-safety": "Guides de sécurité",
+    "aria-nav-about": "À propos de nous",
+    "aria-nav-checkout": "Voir votre panier et passer à la caisse",
+    "aria-tooltip-cart": "Voir votre panier et passer à la caisse",
+    "aria-tooltip-language": "Changer votre préférence de langue",
+    "aria-map": "Carte interactive"
 }
