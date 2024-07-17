@@ -24,23 +24,66 @@ const NavbarCustom = ({ isHomepage }) => {
             <Container className="justify-content-center">
                 <Nav className="mx-auto custom-nav-links">
                     {!isHomepage && (
-                        <HashLink className="nav-link navbar-text" to="/#" style={{ color: 'white' }}><b>{t('nav-homepage')}</b></HashLink>
+                        <HashLink
+                            className="nav-link navbar-text"
+                            to="/#"
+                            style={{ color: 'white' }}
+                            aria-label={t('aria-nav-homepage')}
+                        >
+                            <b>{t('nav-homepage')}</b>
+                        </HashLink>
                     )}
-                    <HashLink className="nav-link navbar-text" to="/#"><b>{t('nav-howtorent')}</b></HashLink>
-                    <HashLink className="nav-link navbar-text" to="/Rental#"><b>{t('nav-rentalequip')}</b></HashLink>
-                    <HashLink className="nav-link navbar-text" to="/Compare#"><b>{t('nav-compare')}</b></HashLink>
-                    <HashLink className="nav-link navbar-text" to="/safetyguides#"><b>{t('nav-safety')}</b></HashLink>
-                    <HashLink className="nav-link navbar-text" to="/#about-us"><b>{t('nav-about')}</b></HashLink>
+                    <HashLink
+                        className="nav-link navbar-text"
+                        to="/#"
+                        aria-label={t('aria-nav-howtorent')}
+                    >
+                        <b>{t('nav-howtorent')}</b>
+                    </HashLink>
+                    <HashLink
+                        className="nav-link navbar-text"
+                        to="/Rental#"
+                        aria-label={t('aria-nav-rentalequip')}
+                    >
+                        <b>{t('nav-rentalequip')}</b>
+                    </HashLink>
+                    <HashLink
+                        className="nav-link navbar-text"
+                        to="/Compare#"
+                        aria-label={t('aria-nav-compare')}
+                    >
+                        <b>{t('nav-compare')}</b>
+                    </HashLink>
+                    <HashLink
+                        className="nav-link navbar-text"
+                        to="/safetyguides#"
+                        aria-label={t('aria-nav-safety')}
+                    >
+                        <b>{t('nav-safety')}</b>
+                    </HashLink>
+                    <HashLink
+                        className="nav-link navbar-text"
+                        to="/#about-us"
+                        aria-label={t('aria-nav-about')}
+                    >
+                        <b>{t('nav-about')}</b>
+                    </HashLink>
                     <OverlayTrigger
                         placement="bottom"
                         overlay={<Tooltip className="custom-tooltip">View your cart and checkout</Tooltip>}
                     >
-                        <HashLink className="nav-link navbar-text" to="/Checkout#"><i className="bi bi-cart"></i> <Badge bg="" className="custom-nav-badge">{cartSize}</Badge></HashLink>
+                        <HashLink
+                            className="nav-link navbar-text"
+                            to="/Checkout#"
+                            aria-label={t('aria-nav-checkout')}
+                        >
+                            <i className="bi bi-cart"></i> <Badge bg="" className="custom-nav-badge">{cartSize}</Badge>
+                        </HashLink>
                     </OverlayTrigger>
                 </Nav>
                 <OverlayTrigger
                     placement="bottom"
-                    overlay={<Tooltip className="custom-tooltip">Change your language preference</Tooltip>}
+                    overlay={<Tooltip className="custom-tooltip">{t('aria-tooltip-language')}</Tooltip>}
                 >
                     <LanguageSwitcher />
                 </OverlayTrigger>

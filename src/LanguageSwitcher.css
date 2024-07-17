@@ -1,8 +1,26 @@
-.language-button {
-    background-color: #5790ba !important;
-}
-
-.language-button-active {
-    background-color: black;
-    color: red;
+.language-dropdown .dropdown-toggle {
+    background-color: #5790ba;
+    color: white;
+    border: none;
   }
+  
+  .language-dropdown .dropdown-menu {
+    background-color: #5790ba;
+    border: none;
+  }
+  
+  .language-dropdown .dropdown-item {
+    color: white;
+  }
+  
+  .language-dropdown .dropdown-item:hover,
+  .language-dropdown .dropdown-item:focus,
+  .language-dropdown .dropdown-item.active {
+    background-color: #44758b;
+    color: white;
+  }
+  
+  .language-dropdown .dropdown-menu.show {
+    display: block;
+  }
+  

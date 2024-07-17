@@ -1,33 +1,43 @@
 import React from 'react';
-import { ButtonGroup, Button } from 'react-bootstrap';
+import { DropdownButton, Dropdown } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 import './LanguageSwitcher.css';
 
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
   const currentLanguage = i18n.language;
+  const { t } = useTranslation();
+
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
   };
 
+  const ariaLabelLanguageSelector = t('aria-label-language-selector');
+  const ariaLabelEnglish = t('aria-label-english');
+  const ariaLabelFrench = t('aria-label-french');
+
   return (
-    <ButtonGroup className="ms-3">
-      <Button
-        className='language-button'
+    <DropdownButton
+      title={currentLanguage === 'en' ? 'English' : 'Français'}
+      className="ms-3 language-dropdown"
+      aria-label= {ariaLabelLanguageSelector}
+    >
+      <Dropdown.Item
         onClick={() => changeLanguage('en')}
-        role="button" 
+        active={currentLanguage === 'en'}
+        aria-label={ariaLabelEnglish}
       >
-        EN
-      </Button>
-      <Button
-        className='language-button' 
+        English
+      </Dropdown.Item>
+      <Dropdown.Item
         onClick={() => changeLanguage('fr')}
-        role="button" 
+        active={currentLanguage === 'fr'}
+        aria-label={ariaLabelFrench}
       >
-        FR
-      </Button>
-    </ButtonGroup>
+        Français
+      </Dropdown.Item>
+    </DropdownButton>
   );
 };
 

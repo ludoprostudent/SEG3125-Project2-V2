@@ -24,7 +24,7 @@ const Confirmation = () => {
                 <>
                     {rentedItems.map(item => (
                         <ConfirmEquipmentCard
-                            key={item.id} // Add a unique key for each item
+                            key={item.id}
                             item={item}
                         />
                     ))}

@@ -48,6 +48,7 @@ const AboutSectionComponent = () => {
                         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d21857.276095377158!2d-75.85414801348537!3d46.78146114741918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1719775841586!5m2!1sen!2sca"
                         allowFullScreen=""
                         loading="lazy"
+                        aria-label={t('aria-map')}
                     ></iframe>
                 </Col>
             </Row>

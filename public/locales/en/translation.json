@@ -101,5 +101,18 @@
     "wakeboard-content1": "Protective gear: Wear suitable protective gear, including a helmet and impact vest.",
     "wakeboard-content2": "Balance and control: Practice maintaining balance and control on the wakeboard before attempting tricks.",
     "wakeboard-content3": "Communication: Establish clear signals with the boat driver for speed adjustments and course changes.",
-    "wakeboard-content4": "Awareness: Stay alert to boat wakes, other watercraft, and any obstacles in the water."
+    "wakeboard-content4": "Awareness: Stay alert to boat wakes, other watercraft, and any obstacles in the water.",
+    "aria-label-language-selector": "Language Selector",
+    "aria-label-english": "Select English",
+    "aria-label-french": "Select French",
+    "aria-nav-homepage": "Homepage",
+    "aria-nav-howtorent": "How to Rent",
+    "aria-nav-rentalequip": "Rental Equipment",
+    "aria-nav-compare": "Compare Boats",
+    "aria-nav-safety": "Safety Guides",
+    "aria-nav-about": "About Us",
+    "aria-nav-checkout": "View your cart and checkout",
+    "aria-tooltip-cart": "View your cart and checkout",
+    "aria-tooltip-language": "Change your language preference",
+    "aria-map": "Interactive map"
 }

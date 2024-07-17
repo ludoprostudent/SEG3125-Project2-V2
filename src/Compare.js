@@ -9,8 +9,6 @@ import Header from './Header';
 
 import './Compare.css';
 
-import equipmentData from './equipment.json';
-
 const Compare = () => {
     const { addToCart } = useContext(CartContext);
     const { t } = useTranslation();
@@ -22,9 +20,15 @@ const Compare = () => {
     const [selection1, setSelection1] = useState({});
     const [selection2, setSelection2] = useState({});
 
+    // Fetch equipment data from json file
     useEffect(() => {
-        const boatArray = equipmentData.filter(item => item.type !== 'not boat');
-        setBoats(boatArray);
+        fetch('./data/equipment.json')
+            .then(response => response.json())
+            .then(data => {
+                const boatArray = data.filter(item => item.type !== 'not boat');
+                setBoats(boatArray);
+            })
+            .catch(error => console.error('Error', error));
     }, []);
 
     const handleBoatSelection = (boat, selectionNumber) => {

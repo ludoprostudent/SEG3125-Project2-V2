@@ -5,7 +5,6 @@ import { useTranslation } from 'react-i18next';
 
 import EquipmentCard from './EquipmentCard';
 import './EquipmentDisplay.css';
-import equipmentData123 from './equipment.json';
 
 const EquipmentDisplay = () => {
     const { t } = useTranslation();
@@ -17,10 +16,16 @@ const EquipmentDisplay = () => {
     const [capacityRange, setCapacityRange] = useState(maxCapacity);
     const [priceRange, setPriceRange] = useState({ min: '', max: '' });
 
+    //   get equipment data from the json file
     useEffect(() => {
-        setEquipment(equipmentData123);
-        setFilteredEquipment(equipmentData123);
-    }, []); 
+        fetch('./data/equipment.json')
+            .then(response => response.json())
+            .then(data => {
+                setEquipment(data);
+                setFilteredEquipment(data);
+            })
+            .catch(error => console.error('Error', error));
+    }, []);
 
     useEffect(() => {
         let filteredData = [...equipment];
